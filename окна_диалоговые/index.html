@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Привет, JavaScript!</title>
+        <script language = "Javascript">
+            alert("И снова здравствуйте! Сейчас я знакомлюсь с диалоговыми окнами")//Однострочные комментарии начинаются с двух знаков слэша
+            alert("Если текста очень много, \n перенести его на новую строку)))")
+            /* С этих символов начинается многострочный комментарий и заканчивается символами */
+		var ok = confirm('Вам уже есть 18 лет?');
+		alert(ok);
+		if(confirm("Нажмите Ок или Отмена"))
+		{
+			alert("Вы нажали кнопку 'Ок'");
+		}
+		else {
+			alert("Вы нажали кнопку 'Отмена'");
+		}
+	var name = prompt('Ваше имя?');
+	alert('Ваше имя: '+name);
+	var Uname = prompt("Как тебя зовут?", "Введи, пожалуйста, сюда свое имя");
+	if (Uname == null) {
+		alert("Не хочешь представляться??? Ну и не надо! Пока!");
+}
+else {
+		document.write("Привет, ", Uname);
+}
+	var firstNumber = prompt("Введите первое число");
+	var secondNumber = prompt("Введите второе число");
+	var total = Number(firstNumber) + Number(secondNumber);
+	alert(total);
+	var b = true;
+	if (b == true) {
+	 alert ("Это true!");
+	} else {
+	alert ("Это false.");
+}
+        </script>
+</head>
+<body>
+        <button id="bigButton" onclick="alert('Привет, мир!');">Щелкните здесь</button>
+        <script src="myScript.js"></script>
+    </body> 
+</html>
